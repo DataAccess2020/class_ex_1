@@ -229,3 +229,4 @@ TSWLatexianTemp*
 data/
 *.Rproj
 .Rproj.user
+.Rhistory
