@@ -1,0 +1,29 @@
+---
+title: "CE1"
+author: "Nicola C. & Francesco C."
+date: "2/12/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction, literature review and hypotheses
+
+
+## Data and method
+
+
+
+## Results
+
+```{r regression model, echo=FALSE}
+htmltools::includeHTML(here::here('output/regression.html'))
+```
+
+
+## Conclusion
+
+
+## References

@@ -23,6 +23,9 @@ ggsave(p_clm,
 reg <- lm(clmchng ~ eisced, data = df )
 summary(reg)
 
+# regression output table
+sjPlot::tab_model(reg, file=here::here('output/regression.html'))
+
 #regression plot
 p_reg <- ggplot(df, aes(x = eisced, y = clmchng)) +
   geom_smooth(method = "lm")
