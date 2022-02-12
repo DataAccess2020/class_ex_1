@@ -19,7 +19,7 @@ In this concise analysis, we are trying to tackle how education level affects th
 
 | Dir | Usage |
 | ----- | -----|
-| scr | Scripts |
+| src | Scripts |
 | fig | Figures and images |
 | output | Textual outputs |
 | doc | Documentation |
