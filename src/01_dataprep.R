@@ -1,17 +1,21 @@
-##Data Preparation
+# Library -----------------------------------------------------------------
 library(tidyverse)
 library(haven)
 
-##Removing tagged missing values from df
+# Removing 'tagged missing values' from dataset ---------------------------
+
 df <- zap_missing(df)
 
-##Recoding education level variable
-#unique(df$eisced)
-df <- subset(df, !(df$eisced %in% c(0,55,NA)))
-#mean(df$eisced)
+# Recoding variable -------------------------------------------------------
+##Recoding education level and climate change variable and renaming with meaningful varnames
 
-##Recoding climate change variable
+#explore variables
+
+#unique(df$eisced)
 #unique(df$clmchng)
-df <- subset(df, !(is.na(df$clmchng)))
-#mean(df$clmchng)
+
+df_subset <- df %>% 
+  filter(!(is.na(clmchng & eisced)) & !(eisced %in% c(0,55))) %>% 
+  mutate(educ_level = factor(eisced) , climate_chng = clmchng) %>% 
+  select(educ_level, climate_chng)
 
