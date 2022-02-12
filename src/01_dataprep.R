@@ -10,6 +10,9 @@ df <- zap_missing(df)
 df <- subset(df, !(df$eisced %in% c(0,55,NA)))
 #mean(df$eisced)
 
+df <- df %>%
+  mutate(edu_z= (eisced - mean(eisced)/sd(eisced)))
+
 ##Recoding climate change variable
 #unique(df$clmchng)
 df <- subset(df, !(is.na(df$clmchng)))
