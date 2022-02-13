@@ -17,7 +17,8 @@ We will mainly focus our analyses on just two variables: eisced that shows the d
 
 
 ## Results
-
+[graph edu-clm]
+Just focusing on the first graph, it is possible to observe that with an educational level between 1 and 5 the climate change belief is about 1.55 in each case, so a quite high and no one tend mostly not to belief. On the other hand, focusing on the two highest value of educational level, six and seven, the means of climate change go down about to 1.45, showing that a possible correlation between an higher level of education and an high number of people believing in climate change. 
 ```{r regression model, echo=FALSE}
 htmltools::includeHTML(here::here('output/regression.html'))
 ```
