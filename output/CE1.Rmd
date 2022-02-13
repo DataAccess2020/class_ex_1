@@ -31,7 +31,7 @@ We will make a linear regression model which will include the education level as
 
 ## Results
 <p>
-<h6 style="font-weight: bold; text-align:left;">Figure 1. Test</h6>
+<h6 style="font-weight: bold; text-align:left;">Figure 1. Mean climate change belief for Education levels</h6>
 <img src="https://raw.githubusercontent.com/DataAccess2020/class_ex_1/main/fig/edu-clm.tiff" alt="Climate~Educ plot" width="400" height="300" />
 </p>
 
