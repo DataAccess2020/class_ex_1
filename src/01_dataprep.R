@@ -19,3 +19,4 @@ df_subset <- df %>%
   mutate(educ_level = factor(eisced) , climate_chng = clmchng) %>% 
   select(educ_level, climate_chng)
 
+
