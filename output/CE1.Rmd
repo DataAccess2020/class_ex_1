@@ -13,7 +13,10 @@ knitr::opts_chunk$set(echo = FALSE)
 A Gallup analysis with a world poll shows that education is the strongest predictor of believing in climate change. [Lee] In fact, people with a higher degree tend to be more concerned about climate change, while, on the other hand, this value decrease while the educational degree goes down. So, it is possible to assume that education is a very good way to understand people's awareness of climate change but also if they belief that it is happen. [Hornsey] In this short paper we would like to analyze the relationship between these two variables in Europe by using ESS data of 2016. 
 
 ## Data and method
-We will mainly focus our analyses on just two variables: eisced that shows the degree value of each respondent, and it is codified from "1 to 7 with 1 at the minimum and 7 as maximum", and the other variable is clmching that is codified from "1 to 4" where 1 means belief in climate change and its consequences and 4 not belief and not be worried about this phenomenon. As exposed in the research, in each of the six continent the connection between education and climate change belief is positive. [Crona]
+This analysis will mainly focus on two variables: *educ_level* and *climate_chng*.
+*Educ_level* has been recoded from the *eisced* variable in ESS8 Dataset. It is codified with seven education categories harmonised amongst all countries included in the survey. One represents the lowest category and seven the highest.
+*Climate_chng* has been recoded from the *clmchng* variable. It answers the question, "Do you think world's climate is changing?" and it is codified with four levels, where one stays for "definitely changing" and four stays for "definitely not changing". 
+To test our hypothesis, we will use one method. We will make a linear regression model which will include the education level as the independent variable and the climate change belief as the dependent variable [Crona].
 
 
 ## Results
