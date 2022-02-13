@@ -3,6 +3,7 @@ title: "CE1"
 author: "Nicola C. & Francesco C."
 date: "2/12/2022"
 output: html_document
+bibliography: ref.bib
 ---
 
 ```{r setup, include=FALSE}
@@ -10,23 +11,54 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ## Introduction, literature review and hypotheses
-A Gallup analysis with a world poll shows that education is the strongest predictor of believing in climate change. [Lee] In fact, people with a higher degree tend to be more concerned about climate change, while, on the other hand, this value decrease while the educational degree goes down. So, it is possible to assume that education is a very good way to understand people's awareness of climate change but also if they belief that it is happen. [Hornsey] In this short paper we would like to analyze the relationship between these two variables in Europe by using ESS data of 2016. 
+In this brief paper, we use ESS Roud 8 data of 2016 to analyse the relationship between education level and climate change belief.
+A Gallup analysis with a world poll pointed out that education is the strongest predictor of believing in climate change [@Lee2015]. 
+People with a higher degree tend to be more concerned about climate change, while, on the other hand, this value slightly decreases while the education achieved decreases. 
+So, it is possible to assume that education is a good predictor of people's awareness and beliefs of climate change [@Hornsey2016].
+
+Based on previous studies, we formulate the following hypothesis: <br />
+H1: Highly educated people are more aware of climate changes than lower educated ones.
 
 ## Data and method
-We will mainly focus our analyses on just two variables: eisced that shows the degree value of each respondent, and it is codified from "1 to 7 with 1 at the minimum and 7 as maximum", and the other variable is clmching that is codified from "1 to 4" where 1 means belief in climate change and its consequences and 4 not belief and not be worried about this phenomenon. As exposed in the research, in each of the six continent the connection between education and climate change belief is positive. [Crona]
+This analysis will mainly focus on two variables: *educ_level* and *climate_chng*.
+*Educ_level* has been recoded from the *eisced* variable in ESS8 Dataset. 
+It is codified with seven education categories harmonised amongst all countries included in the survey. One represents the lowest category and seven the highest.
+*Climate_chng* has been recoded from the *clmchng* variable.
+It answers the question, "Do you think world's climate is changing?" and it is codified with four levels, where one stays for "definitely changing" and four stays for "definitely not changing". 
+To test our hypothesis, we will use one method. 
+We will make a linear regression model which will include the education level as the independent variable and the climate change belief as the dependent variable [@Crona2013].
 
 
 ## Results
-[graph edu-clm]
-Just focusing on the first graph, it is possible to observe that with an educational level between 1 and 5 the climate change belief is about 1.55 in each case, so a quite high and no one tend mostly not to belief. On the other hand, focusing on the two highest value of educational level, six and seven, the means of climate change go down about to 1.45, showing that a possible correlation between an higher level of education and an high number of people believing in climate change. 
+<p>
+<h6 style="font-weight: bold; text-align:left;">Figure 1. Test</h6>
+<img src="https://raw.githubusercontent.com/DataAccess2020/class_ex_1/main/fig/edu-clm.tiff" alt="Climate~Educ plot" width="400" height="300" />
+</p>
+
+Figure 1 shows the mean level of belief by education level; it is possible to observe that with an educational level between 1 and 5, the climate change belief is about 1.55 in each case.
+Those are reasonably high values,  and no one tends not to believe.
+On the other hand, focusing on the two highest values of educational level, six and seven, the means of climate change falls to 1.45, showing a possible correlation between a higher level of education and a stronger belief in climate change.
+
 ```{r regression model, echo=FALSE}
 htmltools::includeHTML(here::here('output/regression.html'))
 ```
-As can we say observing the regression, the relationship between this two variables (climate_chng and educ_level) is surely positive, but it is also possible to say that each education level have a high number of people believing in climate change and this value continue to increase until the maximum educational level. In fact, this make the regression quite linear but it will never be negative also thanks to a high and spread believing in this phenomenon. Just analyzing the results of the regression, it is possible to say that results seems to significant just in two case: with education level six and seven, showing the strong correlation between an higher education and believing in climate change and its consequences.
-[reg]
+## report
+
+Table 1 shows the results of the linear regression model.
+As we can notice, the regression shows a negative correlation between the two variables; as the level of education increases, the mean value of climate change belief decreases [^1].
+It is also possible to say that the belief in climate change is firm for each education level.
+Although, we can note that the results are statistically significant just in the two highest education levels. 
+
+[^1]: Decreasing in mean value means more sensitivity towards climate change.
 
 ## Conclusion
-At the end of this short research, it is possible to confirm how stated in previous research: education and climate change seem to be strongly correlated almost with the highest level of education. But, the relationship do not seems to be as strong as previous stated because it seems to have a low correlation. On the other hand, if we just look at what is exposed in other research, not just education influences this value because there are many other and different factors such as political and cultural belief. [McCright] In fact, as have been stated in these research, both party identification and political belief seem to influence what people think about climate change. 
+
+In this short research, we tried to confirm what the researches mentioned above stated: education and climate change appear to be strongly correlated.
+However, this relationship does not seem to be as strong as expected. 
+Conversely, other scholars pointed out that education is not the sole explanatory factor.
+Political and cultural identification appears to be correlated as well [@McCright2016].
+For this reason, more in-depth analyses are required to understand better which factors interact with the belief in climate change.
+
 
 ## References
 
