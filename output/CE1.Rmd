@@ -22,10 +22,11 @@ Just focusing on the first graph, it is possible to observe that with an educati
 ```{r regression model, echo=FALSE}
 htmltools::includeHTML(here::here('output/regression.html'))
 ```
-
+As can we say observing the regression, the relationship between this two variables (climate_chng and educ_level) is surely positive, but it is also possible to say that each education level have a high number of people believing in climate change and this value continue to increase until the maximum educational level. In fact, this make the regression quite linear but it will never be negative also thanks to a high and spread believing in this phenomenon. Just analyzing the results of the regression, it is possible to say that results seems to significant just in two case: with education level six and seven, showing the strong correlation between an higher education and believing in climate change and its consequences.
+[reg]
 
 ## Conclusion
-At the end of this short research, we can say that the relationship between this two variables is surely positive, but we can say that each education level have a high number of people believing in climate change and this value continue to increase until the maximum educational level. the results given in the previous tab seems to significant just in two case: with education level six and seven, showing the strong correlation between an higher education and believing in climate change and its consequences. But, as exposed in other research, not just education influences this value because there are many other and different factors. 
+At the end of this short research, it is possible to confirm how stated in previous research: education and climate change seem to be strongly correlated almost with the highest level of education. But, as exposed in other different research, not just education influences this value because there are many other and different factors. 
 
 ## References
 
