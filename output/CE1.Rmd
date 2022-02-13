@@ -13,6 +13,9 @@ knitr::opts_chunk$set(echo = FALSE)
 In this brief paper, we use ESS Roud 8 data of 2016 to analyse the relationship between education level and climate change belief.
 A Gallup analysis with a world poll pointed out that education is the strongest predictor of believing in climate change [Lee]. People with a higher degree tend to be more concerned about climate change, while, on the other hand, this value slightly decreases while the education achieved decreases. So, it is possible to assume that education is a good predictor of people's awareness and beliefs of climate change [Hornsey].
 
+Based on previous studies, we formulate the following hypothesis:
+H1: Highly educated people are more aware of climate changes than lower educated ones.
+
 ## Data and method
 This analysis will mainly focus on two variables: *educ_level* and *climate_chng*.
 *Educ_level* has been recoded from the *eisced* variable in ESS8 Dataset. It is codified with seven education categories harmonised amongst all countries included in the survey. One represents the lowest category and seven the highest.
