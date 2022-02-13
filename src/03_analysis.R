@@ -11,3 +11,4 @@ sjPlot::tab_model(reg,
                     css.centeralign = 'text-align: left;',
                     css.firsttablecol = 'font-weight: bold;'),
                   file=here::here('output/regression.html'))
+# in the regression.html output modify the first caption into h6 on first line.

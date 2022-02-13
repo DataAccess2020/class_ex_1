@@ -12,9 +12,9 @@ p_edu <-  df_subset %>%
   ggplot(., aes(x = educ_level, y = climate_mean))+
   geom_point(aes(color = educ_level, size = n),
              shape = 18)+
-  labs(x = "Education Level", 
-       y = "Climate change mean",
-       title = "Mean climate change belief for Education levels")+
+  labs(#title = "Mean climate change belief for Education levels",
+       x = "Education Level", 
+       y = "Climate change mean")+
   guides(color = 'none')+
   ylim(1.4, 1.6)
 

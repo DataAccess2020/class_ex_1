@@ -3,6 +3,7 @@ title: "CE1"
 author: "Nicola C. & Francesco C."
 date: "2/12/2022"
 output: html_document
+bibliography: ref.bib
 ---
 
 ```{r setup, include=FALSE}
@@ -11,28 +12,51 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Introduction, literature review and hypotheses
 In this brief paper, we use ESS Roud 8 data of 2016 to analyse the relationship between education level and climate change belief.
-A Gallup analysis with a world poll pointed out that education is the strongest predictor of believing in climate change [Lee]. People with a higher degree tend to be more concerned about climate change, while, on the other hand, this value slightly decreases while the education achieved decreases. So, it is possible to assume that education is a good predictor of people's awareness and beliefs of climate change [Hornsey].
+A Gallup analysis with a world poll pointed out that education is the strongest predictor of believing in climate change [@Lee2015]. 
+People with a higher degree tend to be more concerned about climate change, while, on the other hand, this value slightly decreases while the education achieved decreases. 
+So, it is possible to assume that education is a good predictor of people's awareness and beliefs of climate change [@Hornsey2016].
 
-Based on previous studies, we formulate the following hypothesis:
+Based on previous studies, we formulate the following hypothesis: <br />
 H1: Highly educated people are more aware of climate changes than lower educated ones.
 
 ## Data and method
 This analysis will mainly focus on two variables: *educ_level* and *climate_chng*.
-*Educ_level* has been recoded from the *eisced* variable in ESS8 Dataset. It is codified with seven education categories harmonised amongst all countries included in the survey. One represents the lowest category and seven the highest.
-*Climate_chng* has been recoded from the *clmchng* variable. It answers the question, "Do you think world's climate is changing?" and it is codified with four levels, where one stays for "definitely changing" and four stays for "definitely not changing". 
-To test our hypothesis, we will use one method. We will make a linear regression model which will include the education level as the independent variable and the climate change belief as the dependent variable [Crona].
+*Educ_level* has been recoded from the *eisced* variable in ESS8 Dataset. 
+It is codified with seven education categories harmonised amongst all countries included in the survey. One represents the lowest category and seven the highest.
+*Climate_chng* has been recoded from the *clmchng* variable.
+It answers the question, "Do you think world's climate is changing?" and it is codified with four levels, where one stays for "definitely changing" and four stays for "definitely not changing". 
+To test our hypothesis, we will use one method. 
+We will make a linear regression model which will include the education level as the independent variable and the climate change belief as the dependent variable [@Crona2013].
 
 
 ## Results
-[graph edu-clm]
-Just focusing on the first graph, it is possible to observe that with an educational level between 1 and 5 the climate change belief is about 1.55 in each case, so a quite high and no one tend mostly not to belief. On the other hand, focusing on the two highest value of educational level, six and seven, the means of climate change go down about to 1.45, showing that a possible correlation between an higher level of education and an high number of people believing in climate change. 
+<p>
+<h6 style="font-weight: bold; text-align:left;">Figure 1. Test</h6>
+<img src="https://raw.githubusercontent.com/DataAccess2020/class_ex_1/main/fig/edu-clm.tiff" alt="Climate~Educ plot" width="400" height="300" />
+</p>
+
+Figure 1 shows the mean level of belief by education level; it is possible to observe that with an educational level between 1 and 5, the climate change belief is about 1.55 in each case.
+Those are reasonably high values,  and no one tends not to believe.
+On the other hand, focusing on the two highest values of educational level, six and seven, the means of climate change falls to 1.45, showing a possible correlation between a higher level of education and a stronger belief in climate change.
+
 ```{r regression model, echo=FALSE}
 htmltools::includeHTML(here::here('output/regression.html'))
 ```
 
+Table 1 shows the results of the linear regression model.
+As we can notice, the regression shows a negative correlation between the two variables; as the level of education increases, the mean value of climate change belief decreases [^1].
+It is also possible to say that the belief in climate change is firm for each education level.
+Although, we can note that the results are statistically significant just in the two highest education levels. 
+
+[^1]: Decreasing in mean value means more sensitivity towards climate change.
 
 ## Conclusion
-At the end of this short research, we can say that the relationship between this two variables is surely positive, but we can say that each education level have a high number of people believing in climate change and this value continue to increase until the maximum educational level. the results given in the previous tab seems to significant just in two case: with education level six and seven, showing the strong correlation between an higher education and believing in climate change and its consequences. But, as exposed in other research, not just education influences this value because there are many other and different factors. 
+
+In this short research, we tried to confirm what the researches mentioned above stated: education and climate change appear to be strongly correlated.
+However, this relationship does not seem to be as strong as expected. 
+Conversely, other scholars pointed out that education is not the sole explanatory factor.
+Political and cultural identification appears to be correlated as well [@McCright2016].
+For this reason, more in-depth analyses are required to understand better which factors interact with the belief in climate change.
 
 ## References
 
