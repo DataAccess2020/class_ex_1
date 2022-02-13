@@ -42,6 +42,7 @@ On the other hand, focusing on the two highest values of educational level, six 
 ```{r regression model, echo=FALSE}
 htmltools::includeHTML(here::here('output/regression.html'))
 ```
+## report
 
 Table 1 shows the results of the linear regression model.
 As we can notice, the regression shows a negative correlation between the two variables; as the level of education increases, the mean value of climate change belief decreases [^1].
@@ -57,6 +58,7 @@ However, this relationship does not seem to be as strong as expected.
 Conversely, other scholars pointed out that education is not the sole explanatory factor.
 Political and cultural identification appears to be correlated as well [@McCright2016].
 For this reason, more in-depth analyses are required to understand better which factors interact with the belief in climate change.
+
 
 ## References
 
