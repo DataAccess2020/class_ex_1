@@ -26,7 +26,7 @@ As can we say observing the regression, the relationship between this two variab
 [reg]
 
 ## Conclusion
-At the end of this short research, it is possible to confirm how stated in previous research: education and climate change seem to be strongly correlated almost with the highest level of education. But, as exposed in other different research, not just education influences this value because there are many other and different factors. 
+At the end of this short research, it is possible to confirm how stated in previous research: education and climate change seem to be strongly correlated almost with the highest level of education. But, the relationship do not seems to be as strong as previous stated because it seems to have a low correlation. On the other hand, if we just look at what is exposed in other research, not just education influences this value because there are many other and different factors such as political and cultural belief. [McCright] In fact, as have been stated in these research, both party identification and political belief seem to influence what people think about climate change. 
 
 ## References
 
