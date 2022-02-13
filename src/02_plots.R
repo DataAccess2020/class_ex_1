@@ -5,7 +5,7 @@ library(tidyverse)
 # Box plot - Educ_level~Climate_chng --------------------------------------
 
 # plotting
-df_subset %>%
+p_edu <-  df_subset %>%
   group_by(educ_level) %>% 
   summarise(climate_mean = mean(climate_chng),
             n = n()) %>% 
@@ -19,7 +19,7 @@ df_subset %>%
   ylim(1.4, 1.6)
 
 # save plot
-ggsave(p_reg, 
+ggsave(p_edu, 
        filename = here::here("fig/edu-clm.tiff"),
        device = "tiff",
        width = 6, height = 4, units = "in",
